@@ -40,7 +40,7 @@ const csv_master = async (csvData) => {
 		const total = thread_results.reduce((x, y) => x + y);
 		return { message: "Success result is " + total, thread_results }
 	} catch (error) {
-		console.log("error", error)
+		console.log("csv_master error: ", error)
 		throw new Error(error)
 	}
 }
